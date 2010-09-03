@@ -1,5 +1,5 @@
-+ obtains the latest Universal Installer for Plone.
-+ runs it to create a ~Plone folder with a zeocluster 
++ obtains the released Universal Installer for Plone4.
++ runs it to create a ~/Plone4 folder with a zeocluster 
 + adds a couple of layers of buildout to add caching and features
-+ anything else...?
+
 

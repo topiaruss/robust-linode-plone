@@ -16,6 +16,6 @@ cd $ROOT
 DEST=`python -c "import os;s=os.path.expanduser('~');print s"`
 ./install.sh -target=$DEST/Plone4 zeo
 
-echo 'Plone setup complete'
+echo 'Plone off-the-shelf setup complete'
 
 
