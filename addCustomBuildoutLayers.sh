@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#adds two new buildout layers, and re-runs buildout
+
 DEST=`python -c "import os;s=os.path.expanduser('~');print s"`
 DEST=$DEST/Plone4
 
@@ -19,7 +21,7 @@ else
 
   echo 're-run buildout to add the new buildout layers'
   cd $DEST/zeocluster
-  ./bin/buildouti
+  ./bin/buildout
 
 fi 
 

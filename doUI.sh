@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#Does the universal install for plone4
+
 #This is the most volatile part of the install
 URL=http://launchpad.net/plone/4.0/4.0.0/+download/Plone-4.0-UnifiedInstaller.tgz
 
@@ -17,6 +19,6 @@ cd $ROOT
 DEST=`python -c "import os;s=os.path.expanduser('~');print s"`
 ./install.sh -target=$DEST/Plone4 zeo
 
-echo 'Plone off-the-shelf setup complete'
+echo 'Plone Universal Installer off-the-shelf setup complete'
 
 
