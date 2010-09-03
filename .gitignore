@@ -1,2 +1,3 @@
-scratch/
+#we want scratch created, but to ingnore contents
+scratch/*
 
