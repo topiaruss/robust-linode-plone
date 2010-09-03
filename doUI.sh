@@ -4,6 +4,7 @@
 URL=http://launchpad.net/plone/4.0/4.0.0/+download/Plone-4.0-UnifiedInstaller.tgz
 
 echo 'getting the Universal Installer'
+cd scratch
 curl -OL $URL
 
 echo 'untar it'
