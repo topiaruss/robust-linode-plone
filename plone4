@@ -18,5 +18,10 @@
 ## automatically create the start and kill links for each level
 #/usr/sbin/update-rc.d -f plone4 defaults
 
+# the varnish command is start only, and fails with a message.
+# TODO: we should probably shut it down on receiving stop
+su -c "/home/plone/Plone4/zeocluster/bin/varnish " plone
+
+
 su -c "/home/plone/Plone4/zeocluster/bin/plonectl $@ " plone
 
