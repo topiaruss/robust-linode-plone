@@ -3,7 +3,7 @@
 #Does the universal install for plone4
 
 #This is the most volatile part of the install
-URL=http://launchpad.net/plone/4.0/4.0.0/+download/Plone-4.0-UnifiedInstaller.tgz
+URL=http://launchpad.net/plone/4.0/4.0.3/+download/Plone-4.0.3-20110720-UnifiedInstaller.tgz
 
 echo 'getting the Universal Installer'
 cd scratch
