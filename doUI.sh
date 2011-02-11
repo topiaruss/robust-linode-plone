@@ -15,8 +15,13 @@ FILE=`python -c "import urlparse as up; u=\"$URL\";s=up.urlparse(u); f=s.path; p
 tar xzf $FILE
 
 echo 'run the install'
-ROOT=`python -c "import os;s=os.path.splitext(\"$FILE\"); print s[0]"`
-cd $ROOT
+#ROOT=`python -c "import os;s=os.path.splitext(\"$FILE\"); print s[0]"`
+#cd $ROOT
+#The above did not work in 4.0.3 - since the convention changed.
+#TODO, see if the pattern changes aagain and revisit.
+
+cd Plone-4.0.3-UnifiedInstaller
+
 DEST=`python -c "import os;s=os.path.expanduser('~');print s"`
 ./install.sh -target=$DEST/Plone4 zeo
 
